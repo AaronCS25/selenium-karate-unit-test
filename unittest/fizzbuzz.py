@@ -1,12 +1,10 @@
-for fizzbuzz in range(51):
+import unittest
+
+def get_fizzbuzz(fizzbuzz):
     if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
-        print("fizzbuzz")
-        continue
+        return "fizzbuzz"
     elif fizzbuzz % 3 == 0:
-        print("fizz")
-        continue
+        return "fizz"
     elif fizzbuzz % 5 == 0:
-        print("buzz")
-        continue
-    print(fizzbuzz)
+        return "buzz"
 
